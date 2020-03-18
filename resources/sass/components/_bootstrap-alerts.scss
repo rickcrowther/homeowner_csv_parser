@@ -1,0 +1,35 @@
+/* Bootstrap Alerts */
+.alert {
+  font-size: $default-font-size;
+  border: none !important;
+
+  svg {
+    vertical-align: middle;
+    line-height: 0.5;
+  }
+  h1, h2, h3, h4, p {
+    margin: 0 !important;
+  }
+}
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(rgba(theme-color($color), .2), theme-color-level($color, 1), theme-color-level($color, 3));
+    .close {
+      color: #ffffff;
+      opacity: 1;
+      font-size: inherit !important;
+    }
+  }
+}
+@each $color, $value in $theme-colors {
+  .alert-fill-#{$color} {
+    @include alert-variant(theme-color($color), theme-color($color), color(white));
+    .close {
+      color: #ffffff;
+      opacity: 1;
+      font-size: inherit !important;
+    }
+
+  }
+}
+

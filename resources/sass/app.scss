@@ -1,0 +1,36 @@
+/* === Import Bootstrap functions and variables === */
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+/*-------------------------------------------------------------------*/
+
+/* === Import template variables === */
+
+@import "variables";
+/*-------------------------------------------------------------------*/
+
+/* === Boostrap Main SCSS === */
+
+@import "~bootstrap/scss/bootstrap";
+/*-------------------------------------------------------------------*/
+
+/* === Vendors and Node Modules === */
+@import "~dropify/dist/css/dropify";
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+
+@import "utilities";
+@import "components/bootstrap-alerts";
+@import "components/buttons";
+@import "components/cards";
+@import "components/datepicker";
+@import "components/loaders/circle-loader";
+@import "components/tables";
+/*-------------------------------------------------------------------*/
+
+body, html {
+    font-size: 0.85em;
+    background-color: #eee;
+    padding: 20px;
+}

@@ -1,0 +1,109 @@
+/* Tables */
+
+.table {
+  margin-bottom: 0;
+  thead {
+    tr.header {
+      background: $blue-gradient;
+      transition: background 0.25s ease;
+      -webkit-transition: background 0.25s ease;
+      -moz-transition: background 0.25s ease;
+      -ms-transition: background 0.25s ease;
+      th {
+        color:#ffffff;
+      }
+    }
+    th {
+      border-top: 0;
+      border-bottom-width: 1px;
+      font-family: $type-2;
+      font-weight: 500;
+      div{
+        white-space: nowrap;
+        display: table;
+        span {
+          display: table-cell;
+        }
+        a {
+          color:#fff !important;
+          white-space: nowrap;
+          display: table-cell;
+        }
+        svg {
+          margin-left: 0.5rem;
+          float:right;
+
+        }
+      }
+      svg {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  td,
+  th {
+    vertical-align: middle;
+    font-size: $default-font-size;
+    line-height: 1;
+    height: 35px;
+    padding: $table-cell-padding;
+    img {
+      border-radius: 100%;
+    }
+    .badge {
+      margin-bottom: 0;
+    }
+    .form-check,
+    .form-radio {
+      margin-top: 0;
+      margin-bottom: -0px;
+    }
+  }
+  &.table-borderless {
+    border: none;
+    td,
+    th,
+    tr {
+      border: none;
+    }
+  }
+  &.table-bordered {
+    thead {
+      border: 1px solid $border-color;
+      border-bottom: none;
+      tr {
+        th {
+          border-left: none;
+          border-right: none;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {}
+      }
+    }
+  }
+  &.table-striped {
+    thead tr {
+      background-color: $table-accent-bg;
+    }
+  }
+  td.info, td.edit, td.archive {
+    width:80px;
+    text-align:center;
+
+  }
+  td.info-edit, td.info-archive, td.edit-archive {
+    width:130px;
+    text-align:center;
+  }
+  td.info-edit-archive, td.restore-delete, td.create-read-edit-delete {
+    width:200px;
+    text-align:center;
+  }
+  td.info-edit-archive-invite {
+    width:260px;
+    text-align:center;
+  }
+}

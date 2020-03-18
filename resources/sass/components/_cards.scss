@@ -1,0 +1,58 @@
+/* Cards */
+.card {
+  border: 0;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+
+  .card-body {
+    padding: $card-padding-y $card-padding-x;
+
+    + .card-body {
+      padding-top: 0;
+    }
+  }
+
+  .card-buttons {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+    padding: 1.3rem 0.8rem;
+  }
+
+  &.card-outline-success {
+    border: 1px solid theme-color("success");
+  }
+
+  &.card-outline-primary {
+    border: 1px solid theme-color("primary");
+  }
+
+  &.card-outline-warning {
+    border: 1px solid theme-color("warning");
+  }
+
+  &.card-outline-danger {
+    border: 1px solid theme-color("danger");
+  }
+
+  &.card-rounded {
+    @include border-radius(5px);
+  }
+
+  &.card-faded {
+    background: #b5b0b2;
+    border-color: #b5b0b2;
+  }
+
+  &.card-circle-progress {
+    color: $white;
+    text-align: center;
+  }
+}
